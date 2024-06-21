@@ -37,27 +37,15 @@ const Router = {
     navElement.appendChild(navItem);
     switch (path) {
       case "/":
-        pageElement = new DocumentFragment();
-        pageElement.appendChild(navElement);
-        let titleElement = document.createElement("h2");
-        titleElement.innerText =
-          "Please select an adoptable pet from the left to see details!";
-        pageElement.appendChild(titleElement);
+        pageElement = document.createElement("database-page");
         break;
 
       default:
         console.log('path', path);
         if (path.startsWith("details/")) {
-          pageElement = new DocumentFragment();
-          pageElement.appendChild(navElement);
-          let details = document.createElement("section");
-          let titleElement = document.createElement("h2");
-          titleElement.innerText = "Details";
-          details.appendChild(titleElement);
-          const paramID = path.substring(path.lastIndexOf("/" + 1));
-          console.log('paramID', paramID);
-          details.dataset.id = paramID;
-          pageElement.appendChild(details);
+          pageElement = document.createElement("database-page");
+          const paramID = path.substring(path.lastIndexOf("/") + 1);
+          pageElement.dataset.id = paramID;
         }
         break;
     }

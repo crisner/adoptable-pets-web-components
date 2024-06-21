@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pets For Adoption Database</title>
     <script src="./src/app.js" defer type="module"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Adoptable Pets Database</h1>
-    <main>
-    </main>
-</body>
+    <main></main>
+    <template id="database-page-template">
+        <h2 id="pet-name">Database</h2>
+      <aside id="menu-container"></aside>
+    </template>
+    <template id="menu-template">
+      <ul id="menu"></ul>
+    </template>
+    <template id="details-template">
+      <section>
+        <h2 id="pet-name"></h2>
+        <div id="pet-details">
+          <img />
+          <dl>
+            <dt>Type</dt>
+            <dd class="type"></dd>
+            <dt>Age</dt>
+            <dd class="age"></dd>
+            <dt>Gender</dt>
+            <dd class="gender"></dd>
+            <dt>Breed</dt>
+            <dd class="breed"></dd>
+            <dt>Spayed/Neutererd</dt>
+            <dd class="spay-neuter"></dd>
+            <dt>Description</dt>
+            <dd class="description"></dd>
+          </dl>
+        </div>
+      </section>
+    </template>
+    <template id="empty-details-template">
+      <h2>Please select an adoptable pet from the left to see details!</h2>
+    </template>
+  </body>
 </html>
