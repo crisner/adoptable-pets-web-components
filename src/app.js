@@ -4,6 +4,7 @@ import Router from "../services/Router.js";
 // Import web components
 import Menu from "../components/Menu.js";
 import Details from "../components/Details.js";
+import EmptyDetails from "../components/EmptyDetails.js";
 import DatabasePage from "../pages/DatabasePage.js";
 
 window._apContext = {};

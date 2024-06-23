@@ -10,6 +10,9 @@ const proxiedStore = new Proxy(Store, {
     if (property === "adoptablePets") {
       window.dispatchEvent(new Event("dbmenuchange"));
     }
+    if (property === "selected") {
+      window.dispatchEvent(new Event("menuitemselect"));
+    }
     return true;
   },
   get(target, property) {

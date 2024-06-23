@@ -1,11 +1,11 @@
-export default class Details extends HTMLElement {
+export default class EmptyDetails extends HTMLElement {
   constructor() {
     super();
     this.root = this.attachShadow({mode: 'open'});
   }
 
   connectedCallback () {
-    const template = document.getElementById('details-template');
+    const template = document.getElementById('empty-details-template');
     const content = template.content.cloneNode(true);
     this.root.appendChild(content);
     // this.render();
@@ -13,4 +13,4 @@ export default class Details extends HTMLElement {
   
 }
 
-customElements.define("details-section", Details);
+customElements.define("empty-details-section", EmptyDetails);
