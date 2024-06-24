@@ -1,142 +1,62 @@
 [
     {
         "id": 120,
-        "url": "https://www.petfinder.com/dog/spot-120/nj/jersey-city/nj333-petfinder-test-account/?referrer_id=d7e3700b-2e07-11e9-b3f3-0800275f82b1",
         "type": "Dog",
-        "species": "Dog",
         "breeds": {
             "primary": "Akita",
             "secondary": null,
             "mixed": false,
             "unknown": false
         },
-        "colors": {
-            "primary": null,
-            "secondary": null,
-            "tertiary": null
-        },
         "age": "Young",
         "gender": "Male",
-        "size": "Medium",
-        "coat": null,
-        "attributes": {
-            "spayed_neutered": false,
-            "house_trained": true,
-            "declawed": null,
-            "special_needs": true,
-            "shots_current": false
-        },
-        "environment": {
-            "children": false,
-            "dogs": false,
-            "cats": false
-        },
-        "tags": [
-            "Cute",
-            "Intelligent",
-            "Large",
-            "Playful",
-            "Happy",
-            "Affectionate"
-        ],
         "name": "Spot",
         "description": "Spot is an amazing dog",
-        "photos": [
-            {
-                "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-                "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-                "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-                "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
-            }
-        ],
-        "videos": [
-            {
-                "embed": "<iframe src=\"https://www.youtube.com/embed/xaXbs1fRFRM\" frameborder=\"0\" allowfullscreen></iframe>"
-            }
-        ],
-        "status": "adoptable",
-        "published_at": "2018-12-22T20:31:32+0000",
-        "contact": {
-            "email": "petfindertechsupport@gmail.com",
-            "phone": "111-333-5555, 222-333-5555, 333-333-5353, 111-333-2222",
-            "address": {
-                "address1": "Test address 1",
-                "address2": "Test address 2",
-                "city": "Jersey City",
-                "state": "NJ",
-                "postcode": "07097",
-                "country": "US"
-            }
-        }
+        "photo": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300"
     },
     {
         "id": 121,
-        "url": "https://www.petfinder.com/dog/spot-120/nj/jersey-city/nj333-petfinder-test-account/?referrer_id=d7e3700b-2e07-11e9-b3f3-0800275f82b1",
         "type": "Dog",
-        "species": "Dog",
         "breeds": {
-            "primary": "Akita",
+            "primary": "Indian Spitz",
             "secondary": null,
             "mixed": false,
             "unknown": false
         },
-        "colors": {
-            "primary": null,
+        "age": "Young",
+        "gender": "Female",
+        "name": "Rosa",
+        "description": "Rosa is an active, playful dog",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Indian_Spitz_Dog.jpg/800px-Indian_Spitz_Dog.jpg?20210402183204"
+    },
+    {
+        "id": 122,
+        "type": "Cat",
+        "breeds": {
+            "primary": "Indian cat",
             "secondary": null,
-            "tertiary": null
+            "mixed": false,
+            "unknown": false
+        },
+        "age": "Young",
+        "gender": "Female",
+        "name": "Ginger",
+        "description": "Ginger loves to sleep all day long",
+        "photo": "https://c1.peakpx.com/wallpaper/436/565/267/cat-honey-hair-animal-pet-animals-wallpaper.jpg"
+    },
+    {
+        "id": 123,
+        "type": "Dog",
+        "breeds": {
+            "primary": "Combai",
+            "secondary": null,
+            "mixed": false,
+            "unknown": false
         },
         "age": "Young",
         "gender": "Male",
-        "size": "Medium",
-        "coat": null,
-        "attributes": {
-            "spayed_neutered": false,
-            "house_trained": true,
-            "declawed": null,
-            "special_needs": true,
-            "shots_current": false
-        },
-        "environment": {
-            "children": false,
-            "dogs": false,
-            "cats": false
-        },
-        "tags": [
-            "Cute",
-            "Intelligent",
-            "Large",
-            "Playful",
-            "Happy",
-            "Affectionate"
-        ],
-        "name": "Duke",
-        "description": "Duke is an amazing dog",
-        "photos": [
-            {
-                "small": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-                "medium": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-                "large": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-                "full": "https://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
-            }
-        ],
-        "videos": [
-            {
-                "embed": "<iframe src=\"https://www.youtube.com/embed/xaXbs1fRFRM\" frameborder=\"0\" allowfullscreen></iframe>"
-            }
-        ],
-        "status": "adoptable",
-        "published_at": "2018-12-22T20:31:32+0000",
-        "contact": {
-            "email": "petfindertechsupport@gmail.com",
-            "phone": "111-333-5555, 222-333-5555, 333-333-5353, 111-333-2222",
-            "address": {
-                "address1": "Test address 1",
-                "address2": "Test address 2",
-                "city": "Jersey City",
-                "state": "NJ",
-                "postcode": "07097",
-                "country": "US"
-            }
-        }
+        "name": "Prince",
+        "description": "Prince is an active, playful dog",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/2/28/Combai_dog.jpg"
     }
 ]

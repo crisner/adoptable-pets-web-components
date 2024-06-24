@@ -8,14 +8,12 @@ export default class DatabasePage extends HTMLElement {
     const content = template.content.cloneNode(true);
     this.appendChild(content);
     window.addEventListener("menuitemselect", () => {
-      console.log("_apContext.store.selected", _apContext.store.selected);
       this.render({ selected: _apContext.store.selected });
     });
     this.render();
   }
 
   render(props) {
-    // console.log('this.dataset.id', this.dataset.id);
     const menuContainer = document.getElementById("menu-container");
     if (!document.querySelector("menu-section")) {
       const menu = document.createElement("menu-section");
@@ -30,6 +28,9 @@ export default class DatabasePage extends HTMLElement {
     const details = document.createElement(
       props?.selected ? "details-section" : "empty-details-section"
     );
+    if (props?.selected) {
+      details.dataset.id = props.selected;
+    }
     details.classList.add("details-container");
     menuContainer.insertAdjacentElement("afterend", details);
   }

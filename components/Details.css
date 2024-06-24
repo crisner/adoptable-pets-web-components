@@ -1,0 +1,24 @@
+#pet-name {
+  text-align: center;
+}
+
+#pet-details {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#pet-details img {
+  margin: 0 auto;
+}
+#pet-details dl {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+#pet-details dt {
+  grid-column: 1/2;
+  padding: 1rem;
+}
+#pet-details dd {
+  grid-column: 2/3;
+  padding: 0.2rem 1rem;
+}

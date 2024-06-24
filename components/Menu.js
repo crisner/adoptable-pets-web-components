@@ -39,8 +39,6 @@ export default class Menu extends HTMLElement {
           event.preventDefault();
           console.log("event", event.target.getAttribute("href"));
           var url = event.target.getAttribute("href");
-          // var id = event.target.getAttribute("id");
-          console.log("event", url);
           _apContext.store.selected = pet.id;
           Router.go({path: url, id: pet.id});
         });
