@@ -1,5 +1,6 @@
 h1 {
     text-align: center;
+    font-family: sans-serif;
 }
 
 .database-container {
@@ -10,11 +11,17 @@ h1 {
     min-height: 85dvh;
     max-width: 1200px;
     margin: 0 auto;
+    font-family: sans-serif;
 }
 
 #menu-container {
     border-right: 1px solid #ccc;
 }
+
 .details-container {
     padding: 0 3rem 0;
+}
+
+.details-container:not([data-id]) {
+    text-align: center;
 }

@@ -18,17 +18,27 @@ export default class Menu extends HTMLElement {
     window.addEventListener("dbmenuchange", () => {
       this.render();
     });
+    window.addEventListener("menuitemselect", () => {
+      console.log('render menu on click');
+      this.render();
+    });
     this.render();
   }
 
   render() {
     const menuEl = this.root.querySelector("#menu");
     const menuData = _apContext.store.adoptablePets;
+    const selectedId = _apContext.store.selected;
     if (menuData) {
+      menuEl.innerHTML = "";
       menuData.forEach(function (pet) {
         const petEl = document.createElement("li");
         const petLink = document.createElement("a");
         petLink.classList.add("item-link");
+        if(pet.id == selectedId) {
+          console.log(pet.id, ':', selectedId, pet.id == selectedId);
+          petLink.classList.add("active");
+        }
         petLink.href = `/details/${pet.id}`;
         petLink.innerText = `${pet.name}`;
         petLink.id = pet.id;

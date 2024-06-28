@@ -25,6 +25,7 @@ export default class Details extends HTMLElement {
         const details = this.root.getElementById("pet-details");
         const pic = details.querySelector("img");
         pic.src = selectedDetails.photo ?? "";
+        pic.alt = `Picture of ${selectedDetails.name}`;
         details.querySelector(".type").innerText = selectedDetails.type;
         details.querySelector(".age").innerText = selectedDetails.age;
         details.querySelector(".gender").innerText = selectedDetails.gender;
